@@ -1,0 +1,5 @@
+[
+  { "method": "Page.navigate", "params": { "url": "https://example.com" } },
+  { "method": "waitFor" },
+  { "method": "snapshot" }
+]

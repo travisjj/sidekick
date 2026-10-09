@@ -1,0 +1,13 @@
+[
+  { "method": "Page.navigate", "params": { "url": "https://stackoverflow.com/questions" } },
+  { "method": "waitFor", "selector": "#questions" },
+
+  { "method": "click", "locator": { "role": "link", "name": "Newest" } },
+  { "method": "waitFor", "urlIncludes": "tab=newest" },
+
+  { "method": "fill", "locator": { "role": "searchbox" }, "text": "chrome devtools protocol" },
+  { "method": "press", "key": "Enter" },
+  { "method": "waitFor", "urlIncludes": "/search" },
+
+  { "method": "snapshot", "within": "#mainbar", "limit": 30 }
+]

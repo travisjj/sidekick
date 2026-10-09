@@ -1,0 +1,7 @@
+# Working space for skills that need somewhere to write
+.scratch/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+*.swp
